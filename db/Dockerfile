@@ -6,3 +6,4 @@ ENV MYSQL_USER=zmakhkha
 ENV MYSQL_PASSWORD=my_password
 
 EXPOSE 3306
+# mysql --user=zmakhkha --password storefront

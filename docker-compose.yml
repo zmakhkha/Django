@@ -4,9 +4,10 @@ services:
   web:
     build: ./python
     ports:
-      - "8000:8000"
+      - "2600:2600"
+    container_name: django
     volumes:
-      - python:/code
+      - ./python:/code
     depends_on:
       - db
     networks: 
@@ -15,8 +16,9 @@ services:
   db:
     build: ./db
     restart: always
-    env_file:
-      - .env
+    container_name: data
+    # env_file:
+    #   - .env
     ports:
       - "3306:3306"
     volumes:
@@ -26,7 +28,6 @@ services:
 
 volumes:
   mariadb_data:
-  python:
 
 networks:
   dj_net:
