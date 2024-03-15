@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
+# EXPOSE 8000
+
+# RUN python manage.py migrate
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:2600"]
