@@ -27,4 +27,4 @@ prune:
 
 stat : 
 	@docker ps
-re : down  rmv prune build up
+re : down  build up
