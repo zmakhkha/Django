@@ -84,6 +84,15 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'storefront',
+#         'HOST': 'localhost',
+#         'USER': 'root',
+#         'PASSWORD': 'root_password',
+    # }
+# }
 
 
 # Password validation
