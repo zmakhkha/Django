@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_ROOT_PASSWORD=pwd
 ENV MYSQL_DATABASE=storefront
 ENV MYSQL_USER=zmakhkha
 ENV MYSQL_PASSWORD=my_password

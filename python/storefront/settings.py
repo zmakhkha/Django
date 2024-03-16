@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sessions',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
@@ -88,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'storefront',
-        'HOST': 'db',
+        'HOST': 'data',
         'USER': 'root',
-        'PASSWORD': 'root_password',
+        'PASSWORD': 'pwd',
     }
 }
 
