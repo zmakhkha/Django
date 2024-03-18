@@ -1,11 +1,7 @@
 from django.urls import path
 from . import views
 
-
-
+# URLConf
 urlpatterns = [
-	path('hello/', views.hello),
-	path('tfoo/', views.hello),
-	path('lala/', views.hello),
-	path('no/', views.hello),
+    path('hello/', views.say_hello)
 ]

@@ -9,12 +9,12 @@ services:
     volumes:
       - ./python:/code
     depends_on:
-      - db
+      - data
     networks: 
       - dj_net
 
-  db:
-    build: ./db
+  data:
+    build: ./data
     restart: always
     container_name: data
     # env_file:
@@ -22,7 +22,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - mariadb_data:/var/lib/mysql
+      - ./db/data:/var/lib/mysql
     networks: 
       - dj_net
 

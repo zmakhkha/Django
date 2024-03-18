@@ -5,7 +5,6 @@ up :
 
 down : 
 	@docker-compose -f docker-compose.yml down
-	@docker volume prune -f
 
 build : 
 	@docker-compose -f docker-compose.yml build
@@ -21,6 +20,7 @@ rmi :
 
 rmv:
 	@docker volume rm $(docker volume ls)
+	# @docker volume prune -f
 
 prune:
 	docker system prune
